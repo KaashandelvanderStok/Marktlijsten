@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="VdS Bestellijst">
+<meta name="theme-color" content="#196432">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADhUlEQVR4nO1Xu25kRRA9Vd09c+fhtQz24lkhLR/ALsECCQGZA8QnECKRkxAtCxESf0AKESRk/AEbQLISAeyyEkhIyGsvHnvsO49+VBH09cwYaedey4+IkkZ970yr6vSpU1U9BAC3H7xbpOHRZxLxgfo0AEDV5zJNASg53mPL3/Ze7dx//MnDYxo8uNelZ+F7smZHZjFvu0ojgNsGmuRHd5PeZ9oPn5I1OzIJAXrl4QGFyiQGMuadsEdf0q2P7u5r0pdwNbSvMlHCzGrSzWsMumxMig5fyMXFE6a2yS4yBE1aJYnmwckAqtUzZTyEpVVqEdJqAAqQJUyeHsJuFDBrLgOp/Ia9MdzNbo5WAQzPp3AvFwjDKdq3+rWHq2eACfFohnQSYPoOceRBBJBlpHFEHE4zHtE5uDicgtqm1nU9AAI0CHqvb0KjQKPAbeUTk83y0SQVU5zzIRk0mWYF1UwDjkEtk9Nf0a/VuiSJxbsCqtpIpPUACCDKItTqfd4tiHIgoqwBxkIjlrMwa4CsLkMmqBeMfx+CLOWURIH6nA6ZRGgQyDhkoEwYPzlEGgeoT0gnAeplZXurqQJFHM3gd0sUr62DCwO/W8LvjUGcvWpUqE9Ye/MVlL8eII0Dpn8mkGXINKF3Z3WfezEAJkgZwC2D9qAP//cJits3YHoOre0e4uEMZBlsOVOPXPduo4CqwvRb4MKAC7OSBRp8eGe1VCpqVU4VnjWx/DtQ5Z5pIUrBmf5wfgZOTTPNoKojVkFPv1suB2KChnS2NGqqsdksqFiIJx7hWYnZX8dAVedkGOQMNAjKX57P+0NTa9QHIArqWIx/PgAZQv/uFia/HYALi9Z2FxoV4hPCcIo48jBdu2DhUgAQQWcJ/Te28M8Pf6A16COVARIEMotIxwEwBA2S9zM1npTN+DKEVAakkceNt7YxeXIAFYVMIzQqyDHUJ8g0Io08yHBjAM0Y0CpIqeC2wdrbg1yiXYdUetj1NsQnEAjiE1A/hs8LIM+D1nYPUIUqYHoOKgrTd9AksK08/Qy5xd3h0gBUIOY5JsyDzNflU5/jZtkcwH8d0wvWc9rF7oSXYP8DYDANkcfM1f8rOmsCIs/k6BsuLEM1Xlto1cBtw+TwHXc32/clpofcce664nNhnSR5JOv8MT/9/KdRZ929p6RfkaUjVHeLK4qtZOlYmb7WDd7Z/eLR/r/KOLvPi68wPQAAAABJRU5ErkJggg==">
+
+<title>Van der Stok — Bestellijst</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ HOOFDMENU ══ -->
+<div class="scr on" id="s-home">
+  <div class="brand">
+    <div class="brand-pre">Kaashandel</div>
+    <div class="brand-name">Van der Stok</div>
+    <div class="brand-tag">Bestellijst</div>
+  </div>
+  <div class="hcards">
+    <div class="hcard" id="btn-wagen1">
+      <div class="hcard-icon">🚐</div>
+      <div><div class="hcard-title">Verkoopwagen 1</div><div class="hcard-desc">Nijmegen · Lent · Elst · Arnhem</div></div>
+      <div class="hcard-arr">→</div>
+    </div>
+    <div class="hcard" id="btn-wagen2" style="border-color:rgba(26,92,139,0.25)">
+      <div class="hcard-icon">🚐</div>
+      <div><div class="hcard-title" style="color:#1A5C8B">Verkoopwagen 2</div><div class="hcard-desc">Eerbeek · Hatert · Amsterdam · Meijhorst · Houten</div></div>
+      <div class="hcard-arr" style="color:#1A5C8B">→</div>
+    </div>
+    <div class="hcard" id="btn-klant-home">
+      <div class="hcard-icon">📝</div>
+      <div><div class="hcard-title">Klantbestellingen</div><div class="hcard-desc">Klantbestellingen</div></div>
+      <div class="hcard-arr">→</div>
+    </div>
+    <div class="hcard dashed" id="btn-beheer">
+      <div class="hcard-icon">⚙️</div>
+      <div><div class="hcard-title">Beheer</div><div class="hcard-desc">Paklijsten en standaard aantallen aanpassen</div></div>
+      <div class="hcard-arr">→</div>
+    </div>
+  </div>
+  <div style="display:flex;gap:1.5rem;margin-top:.5rem">
+    <button id="btn-geschiedenis" style="background:none;border:none;color:var(--mid);font-size:.8rem;cursor:pointer;font-family:'DM Sans',sans-serif;display:flex;align-items:center;gap:.4rem;"><span>📖</span> Geschiedenis</button>
+    <button id="btn-uitleg" style="background:none;border:none;color:var(--mid);font-size:.8rem;cursor:pointer;font-family:'DM Sans',sans-serif;display:flex;align-items:center;gap:.4rem;"><span>❓</span> Uitleg</button>
+  </div>
+</div>
+
+<!-- ══ WAGEN 1 MENU ══ -->
+<div class="scr" id="s-wagen1-home">
+  <div class="hdr">
+    <button class="bbtn" id="w1-back">← Terug</button>
+    <div><div class="hdr-title">Verkoopwagen 1</div><div class="hdr-sub">Nijmegen · Lent · Elst · Arnhem</div></div>
+  </div>
+  <div class="body">
+    <div id="w1-sync-bar" style="text-align:center;padding:.5rem;font-size:.75rem;color:var(--mid);display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:.5rem">
+      <span id="w1-sync-status">🔄 Tik om te vernieuwen</span>
+      <button onclick="syncManual()" type="button" style="background:none;border:1px solid var(--bdr);border-radius:8px;padding:.2rem .6rem;font-size:.72rem;cursor:pointer;color:var(--mid)">↻ Sync</button>
+    </div>
+    <div class="hcards" style="max-width:100%">
+      <div class="hcard" id="btn-w1-aanmaken">
+        <div class="hcard-icon">📋</div>
+        <div><div class="hcard-title">Lijst aanmaken</div><div class="hcard-desc">Vul in wat je morgen nodig hebt</div></div>
+        <div class="hcard-arr">→</div>
+      </div>
+      <div class="hcard" id="btn-w1-pakken">
+        <div class="hcard-icon">📦</div>
+        <div><div class="hcard-title">Lijst pakken</div><div class="hcard-desc">Verwerk de bestelling in het pakhuis</div></div>
+        <div class="hcard-arr">→</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══ WAGEN 2 MENU ══ -->
+<div class="scr" id="s-wagen2-home">
+  <div class="hdr" style="background:#1A5C8B">
+    <button class="bbtn" id="w2-back">← Terug</button>
+    <div><div class="hdr-title">Verkoopwagen 2</div><div class="hdr-sub">Eerbeek · Hatert · Amsterdam · Meijhorst · Houten</div></div>
+  </div>
+  <div class="body">
+    <div id="w2-sync-bar" style="text-align:center;padding:.5rem;font-size:.75rem;color:var(--mid);display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:.5rem">
+      <span id="w2-sync-status">🔄 Tik om te vernieuwen</span>
+      <button onclick="syncManual()" type="button" style="background:none;border:1px solid rgba(26,92,139,0.25);border-radius:8px;padding:.2rem .6rem;font-size:.72rem;cursor:pointer;color:#1A5C8B">↻ Sync</button>
+    </div>
+    <div class="hcards" style="max-width:100%">
+      <div class="hcard" id="btn-w2-aanmaken" style="border-color:rgba(26,92,139,0.25)">
+        <div class="hcard-icon">📋</div>
+        <div><div class="hcard-title" style="color:#1A5C8B">Lijst aanmaken</div><div class="hcard-desc">Vul in wat je morgen nodig hebt</div></div>
+        <div class="hcard-arr" style="color:#1A5C8B">→</div>
+      </div>
+      <div class="hcard" id="btn-w2-pakken" style="border-color:rgba(26,92,139,0.25)">
+        <div class="hcard-icon">📦</div>
+        <div><div class="hcard-title" style="color:#1A5C8B">Lijst pakken</div><div class="hcard-desc">Verwerk de bestelling in het pakhuis</div></div>
+        <div class="hcard-arr" style="color:#1A5C8B">→</div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- ══ KLANT KIES WAGEN ══ -->
+<div class="scr" id="s-klant-wagen-kies">
+  <div class="hdr">
+    <button class="bbtn" id="klant-wagen-back">← Terug</button>
+    <div><div class="hdr-title">Klantbestellingen</div><div class="hdr-sub">Kies een verkoopwagen</div></div>
+  </div>
+  <div class="body">
+    <div class="hcards" style="max-width:100%">
+      <div class="hcard" id="btn-klant-w1">
+        <div class="hcard-icon">🚐</div>
+        <div><div class="hcard-title">Verkoopwagen 1</div><div class="hcard-desc">Nijmegen · Lent · Elst · Arnhem</div></div>
+        <div class="hcard-arr">→</div>
+      </div>
+      <div class="hcard" id="btn-klant-w2" style="border-color:rgba(26,92,139,0.25)">
+        <div class="hcard-icon">🚐</div>
+        <div><div class="hcard-title" style="color:#1A5C8B">Verkoopwagen 2</div><div class="hcard-desc">Eerbeek · Hatert · Amsterdam · Meijhorst · Houten</div></div>
+        <div class="hcard-arr" style="color:#1A5C8B">→</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MARKT KIEZEN ══ -->
+<div class="scr" id="s-markt-kies">
+  <div class="hdr">
+    <button class="bbtn" id="mk-back">← Terug</button>
+    <div><div class="hdr-title" id="mk-title">Kies je markt</div><div class="hdr-sub" id="mk-sub">Lijst aanmaken</div></div>
+  </div>
+  <div class="body"><div class="mlist" id="mlist"></div></div>
+</div>
+
+<!-- ══ PAKHUIS MARKT KIES ══ -->
+<div class="scr" id="s-pakhuis-kies">
+  <div class="hdr">
+    <button class="bbtn" id="pk-back">← Terug</button>
+    <div><div class="hdr-title" id="pk-title">Kies bestelling</div><div class="hdr-sub" id="pk-sub">Pakhuis</div></div>
+  </div>
+  <div class="body"><div class="mlist" id="pklist"></div></div>
+</div>
+
+<!-- ══ SLIDE ══ -->
+<div class="scr" id="s-slide">
+  <div class="hdr" id="slide-hdr" style="padding:.6rem 1.2rem;">
+    <button class="bbtn" id="slide-back">← Terug</button>
+    <div style="flex:1"></div>
+    <button class="bbtn" id="slide-ov-btn" style="margin-right:.5rem;font-size:.72rem;">📋 Lijst</button>
+    <span class="sbadge markt" id="sbadge" style="font-size:.72rem;">Markt</span>
+  </div>
+  <div class="prog"><div class="prog-fill" id="pfill"></div></div>
+  <div class="stop">
+    <span class="scnt" id="scnt">1 / 1</span>
+  </div>
+  <div class="scontent" id="scontent"></div>
+  <div class="catbar" id="catbar" style="display:none"></div>
+  <div class="snav" id="snav"></div>
+  <!-- SLIDE OVERZICHT PANEL -->
+  <div id="slide-ov-panel" style="display:none;position:absolute;inset:0;background:white;z-index:40;flex-direction:column;overflow:hidden;">
+    <div style="background:var(--green);padding:.8rem 1.2rem;display:flex;align-items:center;gap:.75rem;flex-shrink:0;" id="slide-ov-panel-hdr">
+      <button class="bbtn" id="slide-ov-close">← Terug</button>
+      <div style="flex:1">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:white;letter-spacing:.05em" id="slide-ov-title">Overzicht</div>
+        <div style="font-size:.7rem;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:.06em" id="slide-ov-sub"></div>
+      </div>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:1rem 1.2rem;" id="slide-ov-body"></div>
+  </div>
+
+  <div class="npover" id="npover">
+    <div class="np">
+      <div class="npdisp" id="npdisp">0</div>
+      <div class="npgrid">
+        <button class="nk" data-k="7">7</button><button class="nk" data-k="8">8</button><button class="nk" data-k="9">9</button>
+        <button class="nk" data-k="4">4</button><button class="nk" data-k="5">5</button><button class="nk" data-k="6">6</button>
+        <button class="nk" data-k="1">1</button><button class="nk" data-k="2">2</button><button class="nk" data-k="3">3</button>
+        <button class="nk del" data-k="del">⌫</button><button class="nk" data-k="0">0</button><button class="nk ok" data-k="ok">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ OVERZICHT ══ -->
+<div class="scr" id="s-overzicht">
+  <div class="hdr" id="ov-hdr">
+    <div><div class="hdr-title" id="ovtitle">Overzicht</div><div class="hdr-sub" id="ovsub"></div></div>
+    <button class="bbtn" id="ov-home" style="margin-left:auto">🏠 Home</button>
+  </div>
+  <div class="body" id="ovbody"></div>
+  <div class="footer" id="ov-footer">
+    <button class="btn btn-s" id="ov-back2">← Home</button>
+    <button class="btn btn-p" id="ov-doorgaan-btn" style="display:none;background:var(--warn)">▶ Doorgaan</button>
+    <button class="btn btn-p" id="ov-afrond-btn" style="display:none;background:#2A9A4A">✅ Afronden</button>
+  </div>
+</div>
+
+<!-- ══ BEVESTIG MODAL ══ -->
+<div id="bevestig-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:200;align-items:center;justify-content:center;padding:1.5rem;">
+  <div style="background:white;border-radius:18px;padding:2rem;width:100%;max-width:340px;box-shadow:0 20px 60px rgba(0,0,0,0.2)">
+    <div style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--green);margin-bottom:.5rem">Bestelling afronden?</div>
+    <div style="font-size:.85rem;color:var(--mid);margin-bottom:1.5rem;line-height:1.5" id="bevestig-tekst"></div>
+    <div style="display:flex;gap:.75rem">
+      <button class="btn btn-s" style="flex:1" onclick="sluitBevestig()">Annuleren</button>
+      <button class="btn btn-p" style="flex:2;background:#2A9A4A" onclick="bevestigAfronden()">✅ Ja, afronden</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ KLANTBESTELLINGEN ══ -->
+<div class="scr" id="s-klant">
+  <div class="hdr" id="klant-hdr">
+    <button class="bbtn" id="klant-back">← Terug</button>
+    <div><div class="hdr-title" id="klant-title">Klantbestellingen</div><div class="hdr-sub" id="klant-sub"></div></div>
+    <button class="bbtn" id="klant-nieuw-btn" style="margin-left:auto">+ Nieuw</button>
+  </div>
+  <div class="body" id="klant-body"></div>
+</div>
+
+<!-- ══ KLANT FORM ══ -->
+<div class="scr" id="s-klant-form">
+  <div class="hdr" id="klant-form-hdr">
+    <button class="bbtn" id="klant-form-back">← Terug</button>
+    <div><div class="hdr-title" id="klant-form-title">Nieuwe bestelling</div><div class="hdr-sub" id="klant-form-sub"></div></div>
+  </div>
+  <div class="body" id="klant-form-body"></div>
+</div>
+
+<!-- ══ BEHEER ══ -->
+<div class="scr" id="s-beheer">
+  <div class="hdr">
+    <button class="bbtn" id="beh-back">← Terug</button>
+    <div><div class="hdr-title" id="beh-title">Beheer</div><div class="hdr-sub" id="beh-sub">Markten en producten</div></div>
+  </div>
+  <div class="body" id="behbody"></div>
+</div>
+
+<!-- ══ GESCHIEDENIS ══ -->
+<div class="scr" id="s-geschiedenis">
+  <div class="hdr">
+    <button class="bbtn" id="gesch-back">← Terug</button>
+    <div><div class="hdr-title">Geschiedenis</div><div class="hdr-sub">Afgeronde bestellingen</div></div>
+    
+  </div>
+  <div class="body" id="gesch-body"></div>
+</div>
+
+<!-- ══ GESCHIEDENIS DETAIL ══ -->
+<div class="scr" id="s-geschiedenis-detail">
+  <div class="hdr">
+    <button class="bbtn" id="gesch-detail-back">← Terug</button>
+    <div><div class="hdr-title" id="gesch-detail-title">Bestelling</div><div class="hdr-sub" id="gesch-detail-sub"></div></div>
+  </div>
+  <div class="body" id="gesch-detail-body"></div>
+</div>
+
+<!-- ══ UITLEG ══ -->
+<div class="scr" id="s-uitleg" style="background:white;">
+  <div class="hdr">
+    <button class="bbtn" id="uitleg-back">← Terug</button>
+    <div><div class="hdr-title">Uitleg</div><div class="hdr-sub">Hoe werkt de app?</div></div>
+  </div>
+  <div class="body" style="max-width:520px">
+    <div style="background:var(--gbg);border-radius:12px;padding:1rem 1.2rem;margin-bottom:1.2rem;font-size:.85rem;color:var(--green);font-weight:500">
+      👋 Welkom bij de bestellijst van Kaashandel Van der Stok.
+    </div>
+    <div style="margin-bottom:1.4rem">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--green);margin-bottom:.5rem">🚐 Verkoopwagen 1 & 2</div>
+      <div style="font-size:.875rem;color:var(--text);line-height:1.7">Kies je verkoopwagen op het homescreen. Elke wagen heeft zijn eigen markten, productlijst en bestellingen.</div>
+    </div>
+    <div style="border-top:1px solid var(--bdr);margin-bottom:1.4rem;padding-top:1.4rem">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--green);margin-bottom:.5rem">📋 Lijst aanmaken</div>
+      <div style="font-size:.875rem;color:var(--text);line-height:1.7">
+        Aan het einde van de marktdag invullen wat je de volgende dag nodig hebt.<br><br>
+        1. Kies je markt — je ziet de marktdatum en pakdatum.<br>
+        2. Ga product voor product door de slides.<br>
+        3. Vul het aantal in met − en + of tik op het getal.<br>
+        4. Gebruik de categoriebalk onderaan om snel te springen.<br>
+        5. Voeg een notitie toe voor het pakhuis als dat nodig is.<br>
+        6. Klik <b>✓ Klaar</b> als je klaar bent.
+      </div>
+    </div>
+    <div style="border-top:1px solid var(--bdr);margin-bottom:1.4rem;padding-top:1.4rem">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--green);margin-bottom:.5rem">📦 Lijst pakken</div>
+      <div style="font-size:.875rem;color:var(--text);line-height:1.7">
+        In het pakhuis de bestelling verwerken.<br><br>
+        1. Kies de markt.<br>
+        2. Per product: ✅ Gepakt · ❌ Niet gepakt · ⚠️ Manco · 📝 Opmerking<br>
+        3. In het overzicht kun je statussen nog aanpassen door op een product te tikken.<br>
+        4. Staan er nog producten op "Niet gepakt" of "Opmerking"? Klik <b>▶ Doorgaan</b>.<br>
+        5. Als alles klaar is: <b>✅ Afronden</b>.
+      </div>
+    </div>
+    <div style="border-top:1px solid var(--bdr);margin-bottom:1.4rem;padding-top:1.4rem">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--green);margin-bottom:.5rem">📝 Klantbestellingen</div>
+      <div style="font-size:.875rem;color:var(--text);line-height:1.7">
+        1. Kies je verkoopwagen.<br>
+        2. Klik + Nieuw, vul naam, datum en producten in (vrij tekst, één per regel).<br>
+        3. Het pakhuis ziet de klantbestelling automatisch op de juiste dag.<br>
+        4. Markeer als gepakt als de bestelling klaar is.
+      </div>
+    </div>
+    <div style="border-top:1px solid var(--bdr);margin-bottom:1.4rem;padding-top:1.4rem">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--green);margin-bottom:.5rem">⚙️ Beheer</div>
+      <div style="font-size:.875rem;color:var(--text);line-height:1.7">Pas per wagen en per markt de paklijst aan. Stel standaard aantallen in als referentie op de slides.</div>
+    </div>
+    <div style="background:#fffbe6;border:1px solid #f0d060;border-radius:12px;padding:1rem 1.2rem;margin-bottom:2rem;font-size:.82rem;color:#7a5a00">
+      💡 <b>Tip:</b> voeg de app toe aan je beginscherm. Open in Safari → deel-icoontje → "Zet op beginscherm".
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+
+
+
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script src="app2.js"></script>
+</body>
+</html>
